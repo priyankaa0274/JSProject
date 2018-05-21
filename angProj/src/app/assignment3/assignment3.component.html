@@ -1,0 +1,8 @@
+<p>
+  assignment3 works!
+</p>
+
+<button (click)="checkDetails()">Display details</button>
+<p *ngIf = "showDetails">This is a paragraph og random text details.This is the paragragh</p>
+
+<div *ngFor = "let i of finalValue"  [ngStyle] = "{backgroundColor: i>=5? 'red':'green'}"> {{i}} </div>

@@ -1,0 +1,23 @@
+<p>
+  This is a warning theme{{2+2}}!!!!
+</p>
+<button class="btn btn-warning" [disabled]= '!isAvailable' (click)='  onChangeName();
+' >ADD</button>
+<!-- {{isAvailable}} -->
+<!-- <p>{{isName}}</p> -->
+<p *ngIf = "valCheck; else noServer">the new name is{{isName}}</p>
+<ng-template #noServer>
+	<p>Server was not exist</p>
+</ng-template>
+
+
+<!-- <label>Update the server</label> -->
+<input type="text" (input) = "onUpdate($event);">
+<!-- <p>{{isValue}}</p> -->
+
+
+
+
+<input type="text" [(ngModel)] = "isValue">
+<!-- <p>{{isValue}}</p>  -->
+<!-- <app-warning-alert *ngFor = "let i of servers"></app-warning-alert> -->
